@@ -1,0 +1,48 @@
+nohup: ignoring input
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.9.2:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 863-876-552
+127.0.0.1 - - [16/Jun/2026 05:27:52] "POST /api/login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:27:52] "GET /api/admin/stats HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:27:52] "GET /api/elections?status=active HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:27:52] "GET /api/elections/2 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:27:52] "POST /api/login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:27:52] "[35m[1mPOST /api/elections/2/vote HTTP/1.1[0m" 201 -
+127.0.0.1 - - [16/Jun/2026 05:27:52] "[31m[1mPOST /api/elections/2/vote HTTP/1.1[0m" 409 -
+127.0.0.1 - - [16/Jun/2026 05:27:52] "[31m[1mPOST /api/elections/2/vote HTTP/1.1[0m" 403 -
+127.0.0.1 - - [16/Jun/2026 05:27:52] "GET /api/elections/2/results HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:27:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:27:58] "GET /css/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:27:58] "GET /js/api.js HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:27:58] "GET /js/common.js HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:27:58] "GET /api/me HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:27:58] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:28:11] "GET /login.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:28:11] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [16/Jun/2026 05:28:11] "[36mGET /js/api.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [16/Jun/2026 05:28:11] "[36mGET /js/common.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [16/Jun/2026 05:28:11] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [16/Jun/2026 05:28:21] "POST /api/login HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:28:22] "GET /admin.html HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:28:22] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [16/Jun/2026 05:28:22] "[36mGET /js/api.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [16/Jun/2026 05:28:22] "[36mGET /js/common.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [16/Jun/2026 05:28:22] "GET /js/admin.js HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:28:22] "GET /api/me HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:28:22] "GET /api/admin/stats HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:28:22] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+127.0.0.1 - - [16/Jun/2026 05:28:22] "GET /api/elections HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:28:28] "GET /results.html?id=3 HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:28:28] "[36mGET /css/styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [16/Jun/2026 05:28:28] "[36mGET /js/api.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [16/Jun/2026 05:28:28] "[36mGET /js/common.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [16/Jun/2026 05:28:28] "GET /js/results.js HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:28:28] "GET /api/elections/3/results HTTP/1.1" 200 -
+127.0.0.1 - - [16/Jun/2026 05:28:28] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -

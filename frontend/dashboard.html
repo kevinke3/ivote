@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard — ElectroVote</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="app-bg">
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="/dashboard.html" class="brand"><span class="logo">▣</span> Electro<b>Vote</b></a>
+        <nav class="nav-links">
+          <a href="/dashboard.html">Elections</a>
+        </nav>
+        <div class="nav-actions">
+          <span class="badge badge-voted" id="userChip">Student</span>
+          <button class="btn btn-outline btn-sm" onclick="doLogout()">Log out</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <div class="page-head">
+          <div>
+            <h1 id="greeting">Your elections</h1>
+            <p>Cast your vote in active elections and review past results.</p>
+          </div>
+        </div>
+
+        <div id="content"><div class="spinner"></div></div>
+      </div>
+    </main>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/dashboard.js"></script>
+  </body>
+</html>

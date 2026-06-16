@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cast your vote — ElectroVote</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="app-bg">
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="/dashboard.html" class="brand"><span class="logo">▣</span> Electro<b>Vote</b></a>
+        <nav class="nav-links">
+          <a href="/dashboard.html">Elections</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn btn-outline btn-sm" onclick="doLogout()">Log out</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <a href="/dashboard.html" class="muted" style="font-size:14px">← Back to elections</a>
+        <div class="page-head" style="margin-top:14px">
+          <div>
+            <h1 id="title">Cast your vote</h1>
+            <p id="desc"></p>
+          </div>
+          <span id="statusBadge"></span>
+        </div>
+
+        <div id="content"><div class="spinner"></div></div>
+      </div>
+    </main>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/vote.js"></script>
+  </body>
+</html>

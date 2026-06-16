@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElectroVote — Secure University Elections</title>
+    <meta
+      name="description"
+      content="ElectroVote is a modern, secure electronic voting platform for university elections."
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="/" class="brand">
+          <span class="logo">▣</span> Electro<b>Vote</b>
+        </a>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#how">How It Works</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="/login.html" class="btn btn-outline btn-sm">Log in</a>
+          <a href="/register.html" class="btn btn-primary btn-sm">Get started</a>
+          <button class="nav-toggle" aria-label="Menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="fade-in">
+          <span class="pill">🔒 Secure · Transparent · One person, one vote</span>
+          <h1>University elections, <span>reimagined.</span></h1>
+          <p class="lead">
+            ElectroVote is a clean, secure electronic voting platform that lets
+            students cast ballots in seconds and gives administrators real-time
+            insight into every election — all from one beautiful dashboard.
+          </p>
+          <div class="hero-actions">
+            <a href="/register.html" class="btn btn-primary">Create student account</a>
+            <a href="#how" class="btn btn-outline">See how it works</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="num">100%</div>
+              <div class="lbl">Verifiable ballots</div>
+            </div>
+            <div>
+              <div class="num">&lt;30s</div>
+              <div class="lbl">To cast a vote</div>
+            </div>
+            <div>
+              <div class="num">1&nbsp;:&nbsp;1</div>
+              <div class="lbl">One person, one vote</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card fade-in">
+          <h4>Students' Union President 2025</h4>
+          <div class="sub">Select your candidate · Live election</div>
+          <div class="ballot-row selected">
+            <div class="avatar">GA</div>
+            <div class="meta"><b>Grace Adeyemi</b><small>President</small></div>
+            <div class="check"></div>
+          </div>
+          <div class="ballot-row">
+            <div class="avatar">DM</div>
+            <div class="meta"><b>David Mensah</b><small>President</small></div>
+            <div class="check"></div>
+          </div>
+          <div class="ballot-row">
+            <div class="avatar">FY</div>
+            <div class="meta"><b>Fatima Yusuf</b><small>President</small></div>
+            <div class="check"></div>
+          </div>
+          <button class="btn btn-primary btn-block mt-2">Confirm vote</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">About ElectroVote</span>
+          <h2>Trusted digital voting built for campus life</h2>
+          <p>
+            Paper ballots are slow, costly and hard to audit. ElectroVote brings
+            elections online with bank-grade session security, automatic
+            duplicate-vote prevention and instant, tamper-evident results — so
+            student governance is fair, fast and fully transparent.
+          </p>
+          <ul class="check-list">
+            <li><span class="tick">✓</span> Encrypted, signed login sessions for every voter</li>
+            <li><span class="tick">✓</span> Hard guarantee of one ballot per registered student</li>
+            <li><span class="tick">✓</span> Real-time results the moment polls close</li>
+            <li><span class="tick">✓</span> Effortless administration for the electoral committee</li>
+          </ul>
+        </div>
+        <div class="about-visual">
+          <div class="mini-stat">
+            <div>
+              <div class="muted">Registered voters</div>
+              <small class="muted">Across all faculties</small>
+            </div>
+            <div class="big">12,480</div>
+          </div>
+          <div class="mini-stat">
+            <div>
+              <div class="muted">Ballots cast today</div>
+              <small class="muted">Live elections</small>
+            </div>
+            <div class="big">8,932</div>
+          </div>
+          <div class="mini-stat">
+            <div>
+              <div class="muted">Turnout</div>
+              <small class="muted">Real-time</small>
+            </div>
+            <div class="big">71.6%</div>
+          </div>
+          <div class="mini-stat">
+            <div>
+              <div class="muted">Duplicate votes blocked</div>
+              <small class="muted">Always zero tolerance</small>
+            </div>
+            <div class="big">0</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section alt" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Features</span>
+          <h2>Everything you need to run a fair election</h2>
+          <p>
+            A focused toolkit for students and administrators — secure,
+            lightweight and delightfully simple to use.
+          </p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card feature-card">
+            <div class="feature-icon">🔐</div>
+            <h3>Secure authentication</h3>
+            <p>
+              Hashed passwords and signed session cookies keep every student and
+              admin account protected from end to end.
+            </p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>One person, one vote</h3>
+            <p>
+              A database-level guarantee prevents duplicate ballots, so results
+              always reflect the true will of voters.
+            </p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">🗳️</div>
+            <h3>Candidate management</h3>
+            <p>
+              Admins add candidates with positions and manifestos that appear as
+              clean, responsive cards on the ballot.
+            </p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Real-time results</h3>
+            <p>
+              Watch results update live with clear progress bars and instant
+              percentages the moment votes come in.
+            </p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">⚙️</div>
+            <h3>Election control</h3>
+            <p>
+              Create, open and close elections in a click and monitor live
+              voting statistics from the admin dashboard.
+            </p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Responsive by design</h3>
+            <p>
+              A pure-white, minimalist interface that looks and works beautifully
+              on phones, tablets and desktops.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How It Works</span>
+          <h2>Vote in four simple steps</h2>
+          <p>From sign-up to results, ElectroVote keeps the whole process effortless.</p>
+        </div>
+        <div class="steps">
+          <div class="card step">
+            <div class="num">1</div>
+            <h4>Register</h4>
+            <p>Create your account with your student ID and a secure password.</p>
+          </div>
+          <div class="card step">
+            <div class="num">2</div>
+            <h4>Browse elections</h4>
+            <p>See every active election and review the candidates standing.</p>
+          </div>
+          <div class="card step">
+            <div class="num">3</div>
+            <h4>Cast your vote</h4>
+            <p>Pick your candidate and confirm — your ballot is recorded instantly.</p>
+          </div>
+          <div class="card step">
+            <div class="num">4</div>
+            <h4>See results</h4>
+            <p>Follow live results with charts and percentages as votes arrive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section alt">
+      <div class="container">
+        <div class="cta">
+          <h2>Ready to make your voice count?</h2>
+          <p>
+            Join thousands of students using ElectroVote to shape campus
+            leadership. It only takes a minute to get started.
+          </p>
+          <a href="/register.html" class="btn btn-primary">Create your account</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a href="/" class="brand" style="font-size: 18px"
+          ><span class="logo" style="width: 30px; height: 30px; font-size: 16px"
+            >▣</span
+          >
+          Electro<b>Vote</b></a
+        >
+        <span>© 2025 ElectroVote · Secure University Elections</span>
+        <span><a href="/login.html">Log in</a> · <a href="/register.html">Register</a></span>
+      </div>
+    </footer>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/common.js"></script>
+    <script>
+      // If already logged in, surface a quick shortcut to the dashboard.
+      getUser().then((user) => {
+        if (!user) return;
+        const actions = document.querySelector(".nav-actions");
+        const target = user.role === "admin" ? "/admin.html" : "/dashboard.html";
+        actions.innerHTML =
+          `<a href="${target}" class="btn btn-primary btn-sm">Go to dashboard</a>` +
+          `<button class="nav-toggle" aria-label="Menu">☰</button>`;
+        initNavToggle();
+      });
+    </script>
+  </body>
+</html>

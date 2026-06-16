@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results — ElectroVote</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="app-bg">
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="/" class="brand"><span class="logo">▣</span> Electro<b>Vote</b></a>
+        <nav class="nav-links">
+          <a href="/dashboard.html">Elections</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="/dashboard.html" class="btn btn-outline btn-sm">Dashboard</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container">
+        <a href="javascript:history.back()" class="muted" style="font-size:14px">← Back</a>
+        <div class="page-head" style="margin-top:14px">
+          <div>
+            <h1 id="title">Results</h1>
+            <p id="desc"></p>
+          </div>
+          <div style="text-align:right">
+            <span id="statusBadge"></span>
+            <div class="muted" style="font-size:13px;margin-top:6px">
+              <span id="liveDot"></span> Auto-refreshing
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-grid" id="summary" style="grid-template-columns:repeat(3,1fr)"></div>
+        <div class="panel" style="padding:26px">
+          <div id="content"><div class="spinner"></div></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/results.js"></script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create account — ElectroVote</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="auth-wrap">
+      <aside class="auth-aside">
+        <a href="/" class="brand"><span class="logo">▣</span> Electro<b>Vote</b></a>
+        <h2>Your vote, your voice — made simple.</h2>
+        <p>
+          Register with your student ID to join active elections and help shape
+          the future of your campus.
+        </p>
+        <ul class="aside-list">
+          <li><span class="tick">⚡</span> Vote in under 30 seconds</li>
+          <li><span class="tick">🔐</span> Your ballot stays private</li>
+          <li><span class="tick">📱</span> Works on any device</li>
+        </ul>
+      </aside>
+
+      <main class="auth-main">
+        <div class="auth-card fade-in">
+          <a href="/" class="brand" style="margin-bottom: 24px"
+            ><span class="logo">▣</span> Electro<b>Vote</b></a
+          >
+          <h1>Create your account</h1>
+          <p class="sub">Register as a student to start voting.</p>
+
+          <form id="regForm">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input class="input" id="name" type="text" required placeholder="e.g. Amara Okafor" />
+            </div>
+            <div class="field">
+              <label for="identifier">Student ID</label>
+              <input class="input" id="identifier" type="text" required placeholder="e.g. STU1006" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input class="input" id="email" type="email" required placeholder="you@uni.edu" />
+            </div>
+            <div class="field">
+              <label for="department">Department <span class="muted">(optional)</span></label>
+              <input class="input" id="department" type="text" placeholder="e.g. Computer Science" />
+            </div>
+            <div class="field">
+              <label for="password">Password</label>
+              <input class="input" id="password" type="password" required placeholder="At least 6 characters" />
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Create account</button>
+          </form>
+
+          <p class="auth-switch">
+            Already registered? <a href="/login.html">Log in</a>
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/common.js"></script>
+    <script>
+      const form = document.getElementById("regForm");
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const btn = form.querySelector("button");
+        btn.disabled = true;
+        try {
+          const user = await API.register({
+            name: document.getElementById("name").value.trim(),
+            identifier: document.getElementById("identifier").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            department: document.getElementById("department").value.trim(),
+            password: document.getElementById("password").value,
+          });
+          toast("Account created. Welcome, " + user.name.split(" ")[0] + "!", "success");
+          setTimeout(() => (window.location.href = "/dashboard.html"), 700);
+        } catch (err) {
+          toast(err.message, "error");
+          btn.disabled = false;
+        }
+      });
+    </script>
+  </body>
+</html>
